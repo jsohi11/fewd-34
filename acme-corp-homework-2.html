@@ -8,6 +8,7 @@
 body {
 	background-image: url('http://cloud.avandamiri.com/image/3N410e2Q2Z3F/background.png');
 	font-family: Arial;
+	margin: auto;
 
 }
 
@@ -15,9 +16,23 @@ body {
 	border-width: 1px;
 	border-style: solid;
 	border-color: #6E6E6E;
-	height: 75px;
+	height: 100px;
 	background-color: #BDBDBD;
-	margin: auto;
+}
+
+.nav ul {
+	color: white;
+	text-shadow: 1px 1px #848484;
+	float: right;
+	padding-right: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	vertical-align: top;
+}
+
+.nav ul li {
+	display: inline;
+	margin-right: 20px;
 }
 
 .content-box {
@@ -27,30 +42,41 @@ body {
 	border-radius: 10px;
 	width: 50%;
 	margin: 50px;
-	padding: 50px;
+	padding: 35px;
 	background-color: #ffffff;
 	margin-left: auto;
 	margin-right: auto;
-	box-shadow: 5px 5px 5px #888888;
+	box-shadow: 5px 5px 5px #D8D8D8;
 }
 
 .logo {
-
+	float: left;
+	padding-left: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .button {
-
+	background-color: #0431B4;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 25px;
+	padding-left: 25px;
+	border-radius: 5px;
+	border-color: #08088A;
 }
 
 hr {
-
+	width: 55%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 h3 {
 	text-align: center;
-	color: #D8D8D8;
+	color: #A4A4A4;
 	font-weight: lighter;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 </style>
@@ -59,19 +85,22 @@ h3 {
 <header>
 <div class="nav">
 	<div class="logo">
+		<img src="http://cloud.avandamiri.com/image/423B1n2p2v0U/acme-corp.jpg" height="65px">
 	</div>
-	<div class="button">
-	</div>
+	<ul>
+		<li>Products</li>
+		<li class="button">Sign Up</li>
+	</ul>
 </div>
 </header>
 <main>
 <div class="content-box">
-	<h1>Welcom to ACME Corp!</h1>
+	<h1>Welcome to ACME Corp!</h1>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat sem a tortor tincidunt lacinia. Sed vehicula tincidunt consequat. Sed et arcu vitae eros faucibus sollicitudin a sit amet elit. Mauris scelerisque sem leo, a volutpat augue fringilla sed. Pellentesque tempus lacus odio, vel bibendum dui viverra at. Duis fringilla ante a ipsum ullamcorper, et interdum magna bibendum. Vivamus molestie, nulla ac pulvinar auctor, eros sem elementum metus, eu convallis leo tellus ac dui.</p>
 
 <p>Morbi rutrum lacus orci, vitae blandit est egestas sed. Fusce malesuada tincidunt dolor, nec commodo turpis consectetur vitae.</p>
 </div>
-<hr width="55%">
+<hr>
 <h3>Copyright, 2015</h3>
 </main>
 </body>
