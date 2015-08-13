@@ -1,0 +1,71 @@
+body {
+	background-image: url('http://cloud.avandamiri.com/image/3N410e2Q2Z3F/background.png');
+	font-family: Arial;
+	margin: auto;
+}
+
+.nav {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #6E6E6E;
+	height: 100px;
+	background-color: #C4C4C4;
+}
+
+.nav ul {
+	color: white;
+	text-shadow: 1px 1px #848484;
+	float: right;
+	padding-right: 20px;
+	padding-top: 25px;
+	padding-bottom: 15px;
+}
+
+.nav ul li {
+	display: inline;
+	margin-right: 20px;
+}
+
+.content-box {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #D8D8D8;
+	border-radius: 10px;
+	width: 50%;
+	margin: 50px;
+	padding: 35px;
+	background-color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 5px 5px 5px #D8D8D8;
+}
+
+.logo {
+	float: left;
+	padding-left: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.button {
+	background-color: #0431B4;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 25px;
+	padding-left: 25px;
+	border-radius: 5px;
+	border-color: #08088A;
+}
+
+hr {
+	width: 55%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h3 {
+	text-align: center;
+	color: #A4A4A4;
+	font-weight: lighter;
+	font-size: 14px;
+}
