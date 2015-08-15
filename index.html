@@ -7,90 +7,138 @@ add a link to whales and second homework -->
 
 <html>
 <head>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
 	<meta charset="utf-8">
 	<title>FEWD 34 Homework</title>
 <style>
 body {
-	background-image: url('http://www.designbolts.com/wp-content/uploads/2012/12/Lined-Paper-White-Tileable-pattern.jpg');
-	font-family: Open Sans;
+/*	background-image: url('images/lights_background.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: fixed;*/
+	font-family: Inconsolata;
 
 }
 
 header {
-	border-width: 1px;
-	border-style: solid;
-	border-color: #6E6E6E;
-	border-radius: 4px;
-	width: 40%;
-	height: 200px;
+	width: 250px;
 	margin: 50px;
-	padding: 50px;
-	background-color: rgba(255,255,255,.75);
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-main {
-	border-width: 1px;
-	border-style: solid;
-	border-color: #6E6E6E;
-	border-radius: 4px;
-	width: 40%;
-	height: 200px;
-	margin: 50px;
-	padding: 50px;
-	background-color: rgba(255,255,255,.75);
-	margin-left: auto;
-	margin-right: auto;
-}
-
-
-footer {
-	border-width: 1px;
-	border-style: solid;
-	border-color: #6E6E6E;
-	border-radius: 4px;
-	width: 40%;
-	height: 200px;
-	margin: 50px;
-	padding: 50px;
-	opacity: 0.75;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-h1 {
+	position: fixed;
 	float: left;
 }
 
+main {
+	margin-left: 350px;
+	padding-top: 50px; 
+}
+
 .avatar {
-	position: absolute;
-	top: 50px;
-	right: 50px;
-	width: 150px;
-	height: 150px;
-	border-radius: 100px;
+	width: 250px;
+	height: 250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.share-icons {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.icon {
+	width: 30px;
+	height: 30px;
+	padding-right: 10px;
+}
+
+.display-box {
+	width: 300px;
+	height: 300px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	float: left;
+	position: relative;
+}
+
+#black {
+	background-color: black;
+}
+
+#gray {
+	background-color: #20002B;
+}
+
+.display-box-content {
+	color: white;
+    position:absolute;
+    height:20%; /* = 100% - 2*5% padding */
+    width:20%; /* = 100% - 2*5% padding */
+    padding: 30%;
+    text-align: center;
+}
+
+.display-box-content h1 {
+	font-size: 24px;
+}
+
+.display-box-content p {
+	font-size: 18px;
+}
+
+h1 {
+	font-weight: 400;
+	text-align: center;
+}
+
+p {
+	text-align: justify;
 }
 
 </style>
 </head>
 <body>
 <header>
+	<img class="avatar" src="images/profilepic.jpg">
 	<h1>Jacinth Sohi</h1>
-	<img class="avatar" src="https://pbs.twimg.com/profile_images/441805913209327617/CSUAl8-R_400x400.png">
+	<p>This is a project for General Assembly San Francisco's FEWD 34 course. Explore what I've built or follow me for more.</p>
+	<div class="share-icons">
+	<img src="images/github_icon_black.png" class="icon">
+	<img src="images/twitter_icon_black.gif" class="icon">
+	<img src="images/linkedin_icon_black.gif" class="icon">
+</div>
 </header>
 <main>
-	<h2>Homework Assignments</h2>
-	<ul>
-		<li>
-			<a href="/fewd-34/whales-homework-1.html">Homework 1</a>
-		</li>
-		<li>
-			<a href="/fewd-34/acme-corp-homework-2.html">Homework 2</a>
-		</li>
-	</ul>
+<div class="display-box" id="black">
+	<div class="display-box-content">
+		<h1>WHALES</h1>
+	</div>
+</div>
+<div class="display-box" id="gray">
+	<div class="display-box-content">
+		<h1>ACME HOMEPAGE</h1>
+	</div>
+</div>
+<div class="display-box" id="black">
+	<div class="display-box-content">
+		<h2>ACME PRODUCTS & SIGNUP</h1>
+	</div>
+</div>
+<div class="display-box" id="gray">
+	<div class="display-box-content">
+		<h1>JS CALCULATOR</h1>
+	</div>
+</div>
+<div class="display-box" id="black">
+	<div class="display-box-content">
+		<h1>HOMEWORK 5</h1>
+	</div>
+</div>
+<div class="display-box" id="gray">
+	<div class="display-box-content">
+		<h1>HOMEWORK 6</h1>
+	</div>
+</div>
+
+
 </main>
 </body>
 </html>

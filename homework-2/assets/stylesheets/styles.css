@@ -63,6 +63,22 @@ body {
 	border-color: #08088A;
 }
 
+/*.products {
+	float: left;
+	margin-bottom: 10px;
+}*/
+
+.product-image {
+	float: left;
+	width: 200px;
+	height: 125px;
+}
+
+.product-description {
+	width: 300px;
+	margin-left: 300px;
+}
+
 hr {
 	width: 55%;
 	margin-left: auto;
