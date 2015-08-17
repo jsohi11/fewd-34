@@ -12,7 +12,7 @@ body {
 	float: left;
 }
 
-.portfolio {
+main {
 	margin-left: 350px;
 	margin-right: none;
 	margin-top: none;
@@ -20,11 +20,19 @@ body {
 	padding-top: 50px; 
 }
 
+.portfolio {
+	width: 300px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .avatar {
 	width: 250px;
 	height: 250px;
 	margin-left: auto;
 	margin-right: auto;
+	display: block;
 }
 
 .share-icons {
@@ -106,7 +114,7 @@ p {
 	position: relative;
 }
 
-.portfolio {
+main {
 	margin-left: auto;
 	margin-right: auto;
 	position: absolute;
