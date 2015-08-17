@@ -125,5 +125,34 @@ h3 {
 
 label {
 	font-weight: bold;
+	margin-bottom: 25px;
+	width: 100px;
+	float: left;
 }
+
+input[type="email"], input[type="text"], input[type="password"] {
+	border-radius: 4px;
+	margin-left: 25px;
+	height: 2em;
+	width: 200px;
+}
+
+input[type="email"], input[type="text"], input[type="password"], input[type="checkbox"] {
+	margin-bottom: 25px;
+}
+
+input:valid:focus {
+	border-color: black;
+	outline-style: none;
+}
+
+input:invalid:focus {
+	border-color: black;
+	outline-style: none;
+}
+
+input[type="email"], input[type="text"], input[type="password"] {
+	border: 2px solid #F6CED8;
+}
+
 
