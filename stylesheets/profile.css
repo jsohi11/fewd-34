@@ -1,0 +1,119 @@
+body {
+	font-family: Inconsolata;
+}
+
+header {
+	width: 250px;
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	position: fixed;
+	float: left;
+}
+
+main {
+	margin-left: 350px;
+	margin-right: none;
+	margin-top: none;
+	margin-bottom: none;
+	padding-top: 50px; 
+}
+
+.avatar {
+	width: 250px;
+	height: 250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.share-icons {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.share-icons a:hover {
+
+}
+
+.icon {
+	width: 30px;
+	height: 30px;
+	padding-right: 10px;
+}
+
+.display-box {
+	width: 300px;
+	height: 300px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	float: left;
+	position: relative;
+}
+
+#black {
+	background-color: black;
+}
+
+#gray {
+	background-color: #20002B;
+}
+
+.display-box-content {
+	color: white;
+    position:absolute;
+    height:20%; /* = 100% - 2*5% padding */
+    width:20%; /* = 100% - 2*5% padding */
+    padding: 30%;
+    text-align: center;
+}
+
+.display-box-content h1 {
+	font-size: 24px;
+}
+
+.display-box-content p {
+	font-size: 18px;
+}
+
+.display-box-content a {
+	color: white;
+	text-decoration: none;
+}
+
+.display-box-content a:hover {
+	color: gray;
+}
+
+h1 {
+	font-weight: 400;
+	text-align: center;
+}
+
+p {
+	text-align: justify;
+}
+
+/*Media Queries*/
+
+@media (max-width: 1065px) {
+header {
+	margin-top: 50px; 
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	position: absolute;
+	float: none;
+}
+
+main {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+p {
+	text-align: center;
+}
+
+}
