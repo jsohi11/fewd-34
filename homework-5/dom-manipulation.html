@@ -74,7 +74,6 @@ body { font-family: sans-serif; }
       imageTag.setAttribute("width", imgWidth);
       imageTag.setAttribute("height", imgHeight);
       imageBox.appendChild(imageTag)
-
   }
   </script>
 </div>
@@ -94,7 +93,9 @@ body { font-family: sans-serif; }
 
   <script>
   function makeBold() {
-    // Your code goes here.
+    var boldParagraph = document.querySelector("#make-me-bold");
+    var boldClass = "bold"
+    boldParagraph.className = boldClass
   }
   </script>
 </div>
