@@ -66,14 +66,14 @@ body { font-family: sans-serif; }
   <script>
   function addImage() {
       var imgLink = prompt("What's the link to the image?");
-      var imgWidth = prompt("What width should the image be?")
-      var imgHeight = prompt("What should the height of the image be?")
+      var imgWidth = prompt("What width should the image be?");
+      var imgHeight = prompt("What should the height of the image be?");
       var imageBox = document.querySelector("#image");
       var imageTag = document.createElement("img");
       imageTag.setAttribute("src", imgLink);
       imageTag.setAttribute("width", imgWidth);
       imageTag.setAttribute("height", imgHeight);
-      imageBox.appendChild(imageTag)
+      imageBox.appendChild(imageTag);
   }
   </script>
 </div>
@@ -94,8 +94,7 @@ body { font-family: sans-serif; }
   <script>
   function makeBold() {
     var boldParagraph = document.querySelector("#make-me-bold");
-    var boldClass = "bold"
-    boldParagraph.className = boldClass
+    boldParagraph.className = "bold"
   }
   </script>
 </div>
