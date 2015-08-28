@@ -1,0 +1,128 @@
+
+<!-- saved from url=(0046)http://avandamiri.com/fewd-34/week-6/calc.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+* { box-sizing: border-box; }
+body { font-size: 20px; font-family: sans-serif; }
+
+td { width: 100px; text-align: center; }
+.placeholder, button { width: 100%; }
+.placeholder { height: 23px; border: 1px solid #bababa; border-radius: 3px; }
+button { cursor: pointer; border: 1px solid #58c0f5; color: #58c0f5; background-color: white; font: inherit; }
+button { background-color: #58c0f5; color: white; border-radius: 3px; }
+</style>
+
+</head><body data-pinterest-extension-installed="cr1.38.4"><table>
+  <tbody><tr>
+    <td>
+      <input type="text" class="first-operand placeholder">
+    </td>
+    <td>
+      <input type="text" class="second-operand placeholder">
+    </td>
+    <td>
+      =
+    </td>
+    <td>
+      <input type="text" class="result placeholder" disabled="">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button class="add-button inverted-button">+</button>
+    </td>
+    <td>
+      <button class="subtract-button inverted-button">-</button>
+    </td>
+    <td>
+      <button class="multiply-button inverted-button">*</button>
+    </td>
+    <td>
+      <button class="divide-button inverted-button">/</button>
+    </td>
+  </tr>
+</tbody></table>
+
+<script>
+
+// EVENT LISTENERS
+var add_numbers = document.querySelector(".add-button")
+add_numbers.addEventListener("click", add)
+
+var subtract_numbers = document.querySelector(".subtract-button")
+subtract_numbers.addEventListener("click", subtract)
+
+var multiply_numbers = document.querySelector(".multiply-button")
+multiply_numbers.addEventListener("click", multiply)
+
+var divide_numbers = document.querySelector(".divide-button")
+divide_numbers.addEventListener("click", divide)
+
+// MATH FUNCTIONS
+
+function add(){
+
+  var input_one = document.querySelector(".first-operand");
+
+  var input_two = document.querySelector(".second-operand");
+
+  var result = document.querySelector(".result");
+
+  var num_one = parseInt(input_one.value);
+
+  var num_two = parseInt(input_two.value);
+
+  result.value = num_one + num_two;
+
+}
+
+function subtract(){
+
+  var input_one = document.querySelector(".first-operand");
+
+  var input_two = document.querySelector(".second-operand");
+
+  var result = document.querySelector(".result");
+
+  var num_one = parseInt(input_one.value);
+
+  var num_two = parseInt(input_two.value);
+
+  result.value = num_one - num_two;
+  
+}
+
+function multiply(){
+
+  var input_one = document.querySelector(".first-operand");
+
+  var input_two = document.querySelector(".second-operand");
+
+  var result = document.querySelector(".result");
+
+  var num_one = parseInt(input_one.value);
+
+  var num_two = parseInt(input_two.value);
+
+  result.value = num_one * num_two;
+  
+}
+
+function divide(){
+
+  var input_one = document.querySelector(".first-operand");
+
+  var input_two = document.querySelector(".second-operand");
+
+  var result = document.querySelector(".result");
+
+  var num_one = parseInt(input_one.value);
+
+  var num_two = parseInt(input_two.value);
+
+  result.value = num_one / num_two;
+  
+}
+
+
+</script>
+</body></html>
