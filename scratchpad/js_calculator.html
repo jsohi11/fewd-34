@@ -6,24 +6,63 @@
 
 .row {
 	width: 100%;
-	display: inline;
+	display: inline-block;
 }
 
 .button {
-
-background-color: black;
-border-radius: 5px;
-height: 60px;
-width: 100px;
-margin: 20px;
-font: white;
-
+	background-color: black;
+	border-radius: 5px;
+	height: 60px;
+	width: 150px;
+	margin: 20px;
+	color: white;
+	float: left;
+	text-align: center;
+	font-size: 50;
+	font-family: Helvetica;
+	cursor: pointer;
 }
+
+input {
+	border: 1px solid black;
+	border-radius: 5px;
+	height: 60px;
+	width: 150px;
+	margin: 20px;
+	float: left;
+	font-size: 50;
+	font-family: Helvetica;
+	text-align: center;
+}
+
+.equals {
+	height: 60px;
+	width: 150px;
+	margin: 20px;
+	float: left;
+	text-align: center;
+	font-size: 50;
+	font-family: Helvetica;
+}
+
 </style>
 
 </head>
 <body>
-</body>
+
+<div class="row">
+
+
+<input class="first-operand">
+
+<input class="second-operand">
+
+<div class="equals">=</div>
+
+<input class="result">
+
+
+</div>
 
 <div class="row">
 
@@ -31,54 +70,89 @@ font: white;
 
 <div class="button" id="subtract">-</div>
 
-<div class="button" id="multiple">X</div>
+<div class="button" id="multiply">x</div>
 
 <div class="button" id="divide">/</div>
 
 </div>
 
-<script type="text/javascript">
+<script>
 
+// EVENT LISTENERS
+var add_numbers = document.querySelector("#add")
+add_numbers.addEventListener("click", add)
 
-function add(num_one, num_two){
+var subtract_numbers = document.querySelector("#subtract")
+subtract_numbers.addEventListener("click", subtract)
 
-	return num_one + num_two
+var multiply_numbers = document.querySelector("#multiply")
+multiply_numbers.addEventListener("click", multiply)
+
+var divide_numbers = document.querySelector("#divide")
+divide_numbers.addEventListener("click", divide)
+
+// MATH FUNCTIONS
+
+function add(){
+
+  var num_one = parseInt(document.querySelector(".first-operand").value);
+
+  var num_two = parseInt(document.querySelector(".second-operand").value);
+
+  document.querySelector(".result").value = num_one + num_two;
 
 }
 
-function subtract(num_one, num_two){
+function subtract(){
 
-	return num_one - num_two
-	
+  var input_one = document.querySelector(".first-operand");
+
+  var input_two = document.querySelector(".second-operand");
+
+  var result = document.querySelector(".result");
+
+  var num_one = parseInt(input_one.value);
+
+  var num_two = parseInt(input_two.value);
+
+  result.value = num_one - num_two;
+  
 }
 
-function multiply(num_one, num_two){
+function multiply(){
 
-	return num_one * num_two
-	
+  var input_one = document.querySelector(".first-operand");
+
+  var input_two = document.querySelector(".second-operand");
+
+  var result = document.querySelector(".result");
+
+  var num_one = parseInt(input_one.value);
+
+  var num_two = parseInt(input_two.value);
+
+  result.value = num_one * num_two;
+  
 }
 
-function divide(num_one, num_two){
+function divide(){
 
-	return num_one / num_two
-	
+  var input_one = document.querySelector(".first-operand");
+
+  var input_two = document.querySelector(".second-operand");
+
+  var result = document.querySelector(".result");
+
+  var num_one = parseInt(input_one.value);
+
+  var num_two = parseInt(input_two.value);
+
+  result.value = num_one / num_two;
+  
 }
+
 
 </script>
+</body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</html
+</html>

@@ -59,19 +59,29 @@ divide_numbers.addEventListener("click", divide)
 
 // MATH FUNCTIONS
 
+// function add(){
+
+//   var input_one = document.querySelector(".first-operand");
+
+//   var input_two = document.querySelector(".second-operand");
+
+//   var result = document.querySelector(".result");
+
+//   var num_one = parseInt(input_one.value);
+
+//   var num_two = parseInt(input_two.value);
+
+//   result.value = num_one + num_two;
+
+// }
+
 function add(){
 
-  var input_one = document.querySelector(".first-operand");
+  var num_one = parseInt(document.querySelector(".first-operand").value);
 
-  var input_two = document.querySelector(".second-operand");
+  var num_two = parseInt(document.querySelector(".second-operand").value);
 
-  var result = document.querySelector(".result");
-
-  var num_one = parseInt(input_one.value);
-
-  var num_two = parseInt(input_two.value);
-
-  result.value = num_one + num_two;
+  document.querySelector(".result").value = num_one + num_two;
 
 }
 
