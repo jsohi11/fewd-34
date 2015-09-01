@@ -1,32 +1,133 @@
 
 <!-- saved from url=(0051)http://avandamiri.com/fewd-34/week-6/todo-list.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body data-pinterest-extension-installed="cr1.38.4"><form id="new-todo-item-form">
-  <input type="text" id="new-todo-item-input" placeholder="What do you need to do?">
-  <button type="submit">Create todo</button>
-</form>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+</head>
+<body data-pinterest-extension-installed="cr1.38.4">
+<h1>My Tasks</h1>
 
-<hr>
+<form id="new-todo-item-form">
+  <input type="text" id="new-todo-item-input" placeholder="What do you need to do?">
+  <button type="button" class="button">Add Task</button>
+</form>
 
 <ul id="todo-list">
 </ul>
 
 <script>
 
-button.addEventListener("click", addToDo)
-
+var submitTask = document.querySelector(".button")
+submitTask.addEventListener("click", addToDo)
 
 function addToDo(){
-
-
-
+	var newTask = document.querySelector("#new-todo-item-input").value;
+	var taskList = document.querySelector("#todo-list");
+	var task = document.createElement("li");
+	task.textContent = newTask;
+	var addTask = taskList.appendChild(task);
 }
 
 </script>
 
 <style>
 #new-todo-item-input {
-  width: 200px;
+  width: 300px;
+  height: 40px;
 }
+
+.button {
+	width: 100px;
+ 	height: 40px;
+ 	font-family: 'Helvetica';
+ 	font-size: 14px;
+ 	background-color: #FE2E2E;
+ 	color: white;
+}
+
+h1 {
+	margin-left: 150px;
+	margin-top: 40px;
+	font-size: 40px;
+}
+
+form {
+	margin-left: 150px;
+	margin-top: 0px;
+}
+
+ul {
+	margin-left: 150px;
+	font-size: 25px;
+}
+
+html, body { height: 100%; }
+body {
+	font-family: 'Indie Flower', cursive;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+	/* gradients - second red border, first red border, top white space, blue lines */
+    background-image:  -webkit-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -webkit-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -webkit-linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), -webkit-repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+    background-image:  -moz-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -moz-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -moz-linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), -moz-repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+    background-image:  -ms-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -ms-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -ms-linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), -ms-repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+    background-image:  -o-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -o-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -o-linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), -o-repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+    background-image:  linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+    background-size: 1px, 1px, auto, auto 20px;
+    background-repeat: repeat-y, repeat-y, no-repeat, repeat;
+    background-position: 90% 0px, 10% 0px, 0px 0px, 0px 0px;
+}
+
+.paper {
+	margin: 0;
+    display: block;
+    font: 10pt Arial, sans-serif;    
+    line-height: 20px;
+    padding-top: 50px;
+    padding-left: 10.5%;
+    padding-right: 10.5%;
+    text-align: justify;
+}
+.paper:first-line {
+    font: 20pt Arial, sans-serif;
+    line-height: 33px;
+    vertical-align: baseline;
+}
+.paper:after {    
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    position: absolute;
+    background: rgba(255,255,255,1);
+    top: 40px;
+    left: 2%;
+    z-index: 10;
+    -webkit-box-shadow: 
+        inset 2px 2px 5px rgba(125,125,125,1),  
+        2px 50.1em 5px rgba(255,255,255,1), 0px 50em rgba(125,125,125,.75),  
+        2px 90.1em 5px rgba(255,255,255,1), 0px 90em rgba(125,125,125,.5),
+        2px 130.1em 5px rgba(255,255,255,1), 0px 130em rgba(125,125,125,.25);
+    -moz-box-shadow: 
+        inset 2px 2px 5px rgba(125,125,125,1),  
+        2px 50.1em 5px rgba(255,255,255,1), 0px 50em rgba(125,125,125,.75),  
+        2px 90.1em 5px rgba(255,255,255,1), 0px 90em rgba(125,125,125,.5),
+        2px 130.1em 5px rgba(255,255,255,1), 0px 130em rgba(125,125,125,.25);
+    box-shadow: 
+        inset 2px 2px 5px rgba(125,125,125,1),  
+        2px 50.1em 5px rgba(255,255,255,1), 0px 50em rgba(125,125,125,.75),  
+        2px 90.1em 5px rgba(255,255,255,1), 0px 90em rgba(125,125,125,.5),
+        2px 130.1em 5px rgba(255,255,255,1), 0px 130em rgba(125,125,125,.25);
+}
+
+.paper:focus {
+    outline: none;
+}
+
+/*http://cssdeck.com/labs/css3-notebook-paper*/
+
 </style>
 
 </body></html>
