@@ -126,6 +126,8 @@
       var newComment = document.querySelector("#new-comment-body").value;
       var submittedComments = document.querySelector("#comments");
       var postComment = document.createElement("div");
+      var timeStamp = new Date();
+      newComment = newComment + "\n" + timeStamp;
       postComment.textContent = newComment;
       postComment.classList.toggle("comment");
       submittedComments.appendChild(postComment);
