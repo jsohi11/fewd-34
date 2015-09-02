@@ -98,20 +98,38 @@
 
       <form id="new-comment">
         <textarea id="new-comment-body" placeholder="Leave a comment..."></textarea>
-        <button type="submit">Comment</button>
+        <button type="submit" class="comment-button">Comment</button>
       </form>
     </main>
 
     <script>
-      // Your code goes here.
+    // Event Listeners
 
+    var submitComment = document.querySelector(".comment-button")
+    submitComment.addEventListener("click", comment)
 
+    var likePost = document.querySelector(".like-link")
+    likePost.addEventListener("click", like)
 
-function like() {
-  var likeCount = document.querySelector(".like-count");
-  var newNumberOfLikes = parseInt(likeCount.textContent) + 1;
-  likeCount.textContent = newNumberOfLikes;
-}
+    // Functions
+
+    function like(event){
+      event.preventDefault();
+      var addLike = document.querySelector(".like-count");
+      var likes = parseInt(addLike.textContent);
+      newLikes = likes + 1;
+      addLike.textContent = newLikes;
+    }
+
+    function comment(event){
+      event.preventDefault();
+      var newComment = document.querySelector("#new-comment-body").value;
+      var submittedComments = document.querySelector("#comments");
+      var postComment = document.createElement("div");
+      postComment.textContent = newComment;
+      postComment.classList.toggle("comment");
+      submittedComments.appendChild(postComment);
+    }
 
     </script>
   
