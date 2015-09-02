@@ -127,8 +127,8 @@
       var submittedComments = document.querySelector("#comments");
       var postComment = document.createElement("div");
       var timeStamp = new Date();
-      newComment = newComment + "\n" + timeStamp;
-      postComment.textContent = newComment;
+      newComment = newComment + "<br>" + "<br>" + "<em>" + "Posted at " + timeStamp + "</em>";
+      postComment.innerHTML = newComment;
       postComment.classList.toggle("comment");
       submittedComments.appendChild(postComment);
     }
