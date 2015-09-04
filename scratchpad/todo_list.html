@@ -1,5 +1,3 @@
-
-<!-- saved from url=(0051)http://avandamiri.com/fewd-34/week-6/todo-list.html -->
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -18,16 +16,32 @@
 
 <script>
 
-var submitTask = document.querySelector(".button")
-submitTask.addEventListener("click", addToDo)
+var submitTask = document.querySelector(".button");
+submitTask.addEventListener("click", addToDo);
+tasks.forEach(postToDo);
+
+// function addToDo(event){
+// 	event.preventDefault();
+// 	var newTask = document.querySelector("#new-todo-item-input").value;
+// 	var taskList = document.querySelector("#todo-list");
+// 	var task = document.createElement("li");
+// 	task.textContent = newTask;
+// 	var addTask = taskList.appendChild(task);
+// }
+
 
 function addToDo(event){
-	event.preventDefault();
-	var newTask = document.querySelector("#new-todo-item-input").value;
-	var taskList = document.querySelector("#todo-list");
-	var task = document.createElement("li");
-	task.textContent = newTask;
-	var addTask = taskList.appendChild(task);
+    event.preventDefault();
+    var newTask = document.querySelector("#new-todo-item-input").value;
+    tasks = newTask.split(",");
+    return tasks;
+}
+
+function postToDo(task){
+    var taskList = document.querySelector("#todo-list");
+    var taskItem = document.createElement("li");
+    taskItem.textContent = task;
+    var addTask = taskList.appendChild(taskItem);
 }
 
 </script>
